@@ -1,24 +1,47 @@
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  project-id="prueba151224"
-  agent-id="e28a2f87-3348-4098-a970-cd4b286710a8"
-  language-code="es"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-    chat-title="Universidad de La Rioja">
-  </df-messenger-chat-bubble>
-</df-messenger>
 <style>
   df-messenger {
-    z-index: 999;
     position: fixed;
-    --df-messenger-font-color: #A5172E;
-    --df-messenger-font-family: Roboto;
-    --df-messenger-chat-background: #F5F5F5;
-    --df-messenger-message-user-background: #E8F0FE ;
-    --df-messenger-message-bot-background: #FFFFFF;
     bottom: 16px;
     right: 16px;
+    z-index: 999;
+
+    /* Tipografía y color de texto */
+    --df-messenger-font-family: 'Roboto', sans-serif;
+    --df-messenger-font-color: #202124;
+
+    /* Fondo del chat */
+    --df-messenger-chat-background: #F5F5F5;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+    /* Burbujas de usuario */
+    --df-messenger-message-user-background: #E8F0FE;
+    --df-messenger-user-message-border-radius: 12px;
+
+    /* Burbujas del bot */
+    --df-messenger-message-bot-background: #FFFFFF;
+    --df-messenger-bot-message-border-radius: 12px;
+    --df-messenger-bot-message-shadow: 0 1px 4px rgba(0,0,0,0.08);
+
+    /* Input y botón de envío */
+    --df-messenger-input-background-color: #FFFFFF;
+    --df-messenger-input-font-color: #202124;
+    --df-messenger-input-border-radius: 8px;
+    --df-messenger-input-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+    --df-messenger-button-background-color: #A5172E;
+    --df-messenger-button-hover-background-color: #D1102A;
+    --df-messenger-send-icon-color: #FFFFFF;
+
+    /* Avatar */
+    --df-messenger-avatar-border-radius: 50%;
+  }
+
+  /* Header personalizado */
+  df-messenger ::part(chat-title) {
+    background-color: #A5172E;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid #F4B400;
   }
 </style>
