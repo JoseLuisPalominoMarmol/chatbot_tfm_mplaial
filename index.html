@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-
 <df-messenger
   project-id="prueba151224"
   agent-id="e28a2f87-3348-4098-a970-cd4b286710a8"
@@ -10,54 +9,16 @@
     chat-title="Universidad de La Rioja">
   </df-messenger-chat-bubble>
 </df-messenger>
-
 <style>
   df-messenger {
     z-index: 999;
     position: fixed;
+    --df-messenger-font-color: #A5172E;
+    --df-messenger-font-family: Roboto;
+    --df-messenger-chat-background: #F5F5F5;
+    --df-messenger-message-user-background: #E8F0FE ;
+    --df-messenger-message-bot-background: #FFFFFF;
     bottom: 16px;
     right: 16px;
-
-    /* Tipografía y color */
-    --df-messenger-font-family: 'Roboto', sans-serif;
-    --df-messenger-font-color: #202124;
-
-    /* Fondo del widget */
-    --df-messenger-chat-background: #F5F5F5;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-
-    /* Burbujas usuario */
-    --df-messenger-message-user-background: #E8F0FE;
-    --df-messenger-message-user-border-radius: 12px;
-    --df-messenger-message-user-shadow: 0 1px 3px rgba(0,0,0,0.1);
-
-    /* Burbujas bot */
-    --df-messenger-message-bot-background: #FFFFFF;
-    --df-messenger-message-bot-border-radius: 12px;
-    --df-messenger-message-bot-shadow: 0 1px 4px rgba(0,0,0,0.08);
-
-    /* Input */
-    --df-messenger-input-background-color: #FFFFFF;
-    --df-messenger-input-font-color: #202124;
-    --df-messenger-input-border-radius: 8px;
-    --df-messenger-input-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    --df-messenger-input-placeholder-color: rgba(32,33,36,0.5);
-
-    /* Botón enviar */
-    --df-messenger-button-background-color: #A5172E;
-    --df-messenger-button-hover-background-color: #D1102A;
-    --df-messenger-send-icon-color: #FFFFFF;
-
-    /* Avatar redondo */
-    --df-messenger-avatar-border-radius: 50%;
-  }
-
-  /* Cabecera personalizada */
-  df-messenger ::part(chat-title) {
-    background-color: #A5172E;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    border-bottom: 2px solid #F4B400;
   }
 </style>
